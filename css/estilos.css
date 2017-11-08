@@ -71,7 +71,7 @@ body{ /*punto 2 de consideraciones generales*/
 	 	float: left;
 		display:inline;
 	 	padding-left:1em;
-   		font-family: 'Dancing Script', cursive;
+   		font-family: 'DancingScript', cursive;
 
 	 	font-size: 2em;
 	}
@@ -80,7 +80,7 @@ body{ /*punto 2 de consideraciones generales*/
 		display:inline;
 		float: right;
 		padding-right:1em;
-   		font-family: 'Dancing Script', cursive;
+   		font-family: 'DancingScript', cursive;
    		font-size: 2em;
 	}
 }/*FIN PARA DESKTOPS*/
@@ -97,14 +97,14 @@ body{ /*punto 2 de consideraciones generales*/
 	.titulo{
 		display:block;
 	 	padding-left:1em;
-   		font-family: 'Dancing Script', cursive;
+   		font-family: 'DancingScript', cursive;
    		font-size: 1em;
 	}
 
 	.menu{
 		display:block;
 		padding-right:1em;
-   		font-family: 'Dancing Script', cursive;
+   		font-family: 'DancingScript', cursive;
 		font-size: 1em;
 	}
 }/*FIN PARA MOVILES*/
@@ -131,12 +131,12 @@ body{ /*punto 2 de consideraciones generales*/
 
 .ImgAbajoIzquierda{
 	text-align: center;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'DancingScript', cursive;
 }
 
 .ImgAbajoDerecha{
 	text-align: center;
-	font-family: 'Dancing Script', cursive;
+	font-family: 'DancingScript', cursive;
 }
 
 .ImgAbajoIzquierda>a>img:hover {
@@ -235,7 +235,7 @@ body{ /*punto 2 de consideraciones generales*/
 	.ColumnaFooter{
 		width:100%;
 		margin: 10px;
-   		font-family: 'Dancing Script', cursive;
+   		font-family: 'DancingScript', cursive;
 	}
 
 /*MEDIA PARA FOOTER*/
