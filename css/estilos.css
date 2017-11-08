@@ -1,0 +1,332 @@
+header{
+	 background-color:  #5b7989;
+	 border-radius: 10px 10px 0px 0px;
+	 height:2em;
+	 display: block;
+	 padding-top:1em;
+	 padding-bottom:1em;
+}
+
+header a,header a:visited{
+color: white;
+}
+
+.titulo{
+	color: white;
+    text-shadow: 2px 0px 0px #02010a;
+}
+
+.inicio{
+	text-decoration: none;
+}
+
+.paisajes{
+	text-decoration: none;
+}
+
+.retratos{
+	text-decoration: none;
+}
+
+img{ /*sombra para todas las imgs*/
+	box-shadow: 2px 0px 0px #02010a;
+}
+
+body{ /*punto 2 de consideraciones generales*/
+	background-color: #02010a;
+}
+
+/*MEDIA PARA EL BODY */
+@media(min-width: 900px){ /*PARA DESKTOPS*/
+	#Contenido{
+		width: 900px;
+		text-align: center;
+	}
+}/*FIN PARA DESKTOPS*/
+
+@media(max-width: 899px){ /*PARA MOVILES*/
+	#Contenido{
+		width: 100%;
+	}
+}/*FIN PARA MOVILES*/
+
+/*******************************************FIN DEL BODY********************************************/
+
+
+/*MEDIA PARA LA CABECERA */
+@media(min-width: 900px){ /*PARA DESKTOPS*/
+	#Contenido{
+		width: 900px;
+		text-align: center;
+	}
+
+	.titulo{
+	 	float: left;
+		display:inline;
+	 	padding-left:1em;
+   		font-family: 'Dancing Script', cursive;
+	 	font-size: 2em;
+	}
+
+	.menu{
+		display:inline;
+		float: right;
+		padding-right:1em;
+   		font-family: 'Dancing Script', cursive;
+   		font-size: 2em;
+	}
+}/*FIN PARA DESKTOPS*/
+
+@media(max-width: 899px){ /*PARA MOVILES*/
+	#Contenido{
+		width: 100%;
+	}
+
+	header{
+		text-align: center;
+	}
+
+	.titulo{
+		display:block;
+	 	padding-left:1em;
+   		font-family: 'Dancing Script', cursive;
+   		font-size: 1em;
+	}
+
+	.menu{
+		display:block;
+		padding-right:1em;
+   		font-family: 'Dancing Script', cursive;
+		font-size: 1em;
+	}
+}/*FIN PARA MOVILES*/
+
+/*******************************************FIN DE CABECERA********************************************/
+
+/******************************************IMAGENES DEL CENTRO*****************************************/
+#ImagenCentral{
+		background-color:#82c3a6;
+		text-align: center;
+		padding: 1em;
+	}
+
+.ImgArriba>img{
+		width: 80%;
+	}
+
+/*IMAGENES SECUNDARIAS*/
+#ContenedorSecundaria{
+	background-color: #d5c75f;
+	border: black 1px solid;
+	padding: 1em;
+}
+
+.ImgAbajoIzquierda{
+	text-align: center;
+    font-family: 'Dancing Script', cursive;
+}
+
+.ImgAbajoDerecha{
+	text-align: center;
+	font-family: 'Dancing Script', cursive;
+}
+
+.ImgAbajoIzquierda>a>img:hover {
+	background-color: red;
+	-ms-transform: rotate(10deg);
+	-moz-transform: rotate(10deg);
+	-webkit-transform: rotate(10deg);
+	animation-duration: 2s;
+	/*SOMBRA*/
+	-webkit-box-shadow: 2px 2px 2px 0px rgba(130,195,166,0.5);
+    -moz-box-shadow: 2px 2px 2px 0px rgba(130,195,166,0.5);
+    box-shadow: 2px 2px 2px 0px  #82c3a6;
+	}
+
+.ImgAbajoDerecha>a>img:hover {
+	background-color: red;
+	-ms-transform: translate(20px,-5px);
+	-moz-transform: translate(20px,-5px);
+	-webkit-transform: translate(20px,-5px);
+	/*DURACION DE LA ANIMACION*/
+	-moz-animation-duration: 10s;
+	/*SOMBRA*/
+	-webkit-box-shadow: 2px 2px 2px 0px rgba(130,195,166,0.5);
+    -moz-box-shadow: 2px 2px 2px 0px rgba(130,195,166,0.5);
+    box-shadow: 2px 2px 2px 0px #82c3a6;
+}
+
+@media(min-width: 900px) { /*PARA DESKTOPS*/
+	.ImgArriba>img{
+		width: 80%;
+	}
+
+	#ContenedorSecundaria{
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.ImgAbajoIzquierda{
+		width: 50%;
+		padding: 1em;
+	}
+
+	.ImgAbajoDerecha{
+		width: 50%;
+		padding: 1em;
+	}
+
+	.ImgAbajoIzquierda>a>img{
+		width: 100%
+	}
+
+	.ImgAbajoDerecha>a>img{
+		width: 50% /*en este caso se pone 50% por el tamaño de la imagen para compensarla con la de la izquierda*/
+	}
+}/*FIN PARA DESKTOPS*/
+
+@media(max-width: 899px){ /*PARA MOVILES*/
+	.ImgArriba>img{
+		width: 100%;
+	}
+
+	#ContenedorSecundaria{
+		display: block;
+		padding: 1em;
+		justify-content: center;
+	}
+
+	.ImgAbajoIzquierda{
+		width: 100%;
+	}
+
+	.ImgAbajoDerecha{
+		width: 100%;
+	}
+
+	.ImgAbajoIzquierda>a>img{
+		width: 100%
+	}
+
+	.ImgAbajoDerecha>a>img{
+		width: 100%
+	}
+} /*FIN PARA MOVILES*/
+
+/********************************************FIN PARA IMAGENES DEL CENTRO*************************************************/
+
+/************************************************INICIO DEL FOOTER********************************************************/
+#contenedorFooter{
+		background-color:#C6d5c5;
+		width:100%;
+		padding-top:1em;
+	 	padding-bottom:1em;
+	 	border-radius: 0px 0px 10px 10px;
+	}
+
+	.ColumnaFooter{
+		width:100%;
+		margin: 10px;
+   		font-family: 'Dancing Script', cursive;
+	}
+
+/*MEDIA PARA FOOTER*/
+@media (min-width: 900px){ /*PARA DESKTOPS*/
+	#contenedorFooter{
+    	display:flex;
+    	text-align: left;
+    	justify-content: space-around;
+	}
+
+	.ColumnaFooter{
+		float:left;
+		padding-left: 10px;
+	}
+}/*FIN PARA DESKTOPS*/
+
+@media(min-width: 600px) and (max-width: 899px){ /*PARA MOVILES*/
+	#contenedorFooter{
+    	display:block;
+    	text-align: left;
+	}
+
+
+	.ColumnaFooter{
+		padding-left: 10px;
+	}
+} /*FIN PARA MOVILES*/
+
+/********************************************FIN PARA FOOTER*************************************************/
+
+/********************************************INICIO PAISAJES Y RETRATOS**************************************/
+#Galeria{
+	background: #d5c75f;
+}/*GaleriaPaisajes y GaleriaRetrato*/
+
+#Galeria img{
+	width: 100%
+}
+
+#Galeria div {
+	width: 33.33%;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 10px;
+}
+
+.Blur{
+	filter: blur(10px);
+}/*FIN BLUR*/
+
+.Sephia{
+	filter: sepia(90%);
+}/*FIN SEPHIA*/
+
+.GrayScale{
+	filter: grayscale(100%);
+
+}/*FIN GRAYSCALE*/
+
+.SinFormato{
+
+}/*FIN SIN FORMATO*/
+
+@media(min-width: 900px) { /*PARA DESKTOPS*/
+	 #Contenido{
+		width: 900px;
+		text-align: center;
+	}
+
+	 #Galeria{
+		display: flex;
+		flex-flow: row wrap;
+	    -webkit-flex-flow: row wrap;
+		min-height: 100px;
+		padding: 20px 0;
+	}/*GaleriaPaisajes y GaleriaRetrato*/
+
+	#Galeria div {
+		width: 33.33%;
+		text-align: center;
+		box-sizing: border-box;
+		padding: 10px;
+	}
+}/*FIN PARA DESKTOPS*/
+
+@media(max-width: 899px){ /*PARA MOVILES*/
+	#Contenido{
+		width: 100%;
+	}
+
+	#Galeria{
+		display: block;
+	}/*GaleriaPaisajes y GaleriaRetrato*/
+
+	#Galeria div {
+		width: 100%;
+		text-align: center;
+		box-sizing: border-box;
+	}
+} /*FIN PARA MOVILES*/
+
+/********************************************FIN PAISAJES*************************************************/
