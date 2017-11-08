@@ -47,7 +47,7 @@ body{ /*punto 2 de consideraciones generales*/
 @media(min-width: 900px){ /*PARA DESKTOPS*/
 	#Contenido{
 		width: 900px;
-		text-align: center;
+		margin: auto;
 	}
 }/*FIN PARA DESKTOPS*/
 
@@ -302,8 +302,7 @@ body{ /*punto 2 de consideraciones generales*/
 @media(min-width: 900px) { /*PARA DESKTOPS*/
 	 #Contenido{
 		width: 900px;
-		text-align: center;
-	}
+		margin: auto;	}
 
 	 #Galeria{
 		display: flex;
