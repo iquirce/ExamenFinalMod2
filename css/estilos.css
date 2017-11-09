@@ -59,12 +59,29 @@ body{ /*punto 2 de consideraciones generales*/
 
 /*******************************************FIN DEL BODY********************************************/
 
+/*********************************************KEYFRAMES*********************************************/
+@keyframes slidein {
+	0%{
+		margin-top: 150%;
+	}
+
+	60%{
+		margin-top: -5%;
+	}
+
+	100%{
+		margin-top: 0%;
+	}
+}/*FIN PARA KEYFRAME SLIDEIN*/
+
+/*******************************************FIN DE KEYFRAMES****************************************/
 
 /*MEDIA PARA LA CABECERA */
 @media(min-width: 900px){ /*PARA DESKTOPS*/
 	#Contenido{
 		width: 900px;
 		text-align: center;
+		animation: slidein 1s forwards;
 	}
 
 	.titulo{
@@ -88,6 +105,8 @@ body{ /*punto 2 de consideraciones generales*/
 @media(max-width: 899px){ /*PARA MOVILES*/
 	#Contenido{
 		width: 100%;
+		animation: slidein 1s forwards;
+
 	}
 
 	header{
